@@ -23,7 +23,7 @@ TeamFit은 학생의 희망 역할, 가용 시간, 협업 성향과 전공 정�
 | --- | --- |
 | 백엔드 API | Python, FastAPI, Pydantic |
 | 데이터베이스 | PostgreSQL, SQLAlchemy 2.0, psycopg |
-| 인증 | JWT(python-jose), 비밀번호 해싱(passlib/bcrypt) |
+| 인증 | JWT(python-jose), Password hashing(passlib/bcrypt) |
 | 팀 편성 | 그리디 초기 배치, 국소 탐색, 담금질 기법, 다중 시작 |
 | 교수 메모 해석 | 정규식 기반 규칙 처리 |
 | 테스트 | pytest |
