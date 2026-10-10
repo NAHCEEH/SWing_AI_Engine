@@ -1,0 +1,25 @@
+{
+  "team_size": 4,
+  "weights": {
+    "major": 4,
+    "role": 5,
+    "time": 3,
+    "trait": 3
+  },
+  "hard": {
+    "same_major_max": 2,
+    "separate_pairs": [
+      [
+        "b97b0fa2-b9aa-53bf-a4e1-f4e28e3a7994",
+        "5e61b296-4b62-57bf-a0ec-2f6c04c25cdc"
+      ]
+    ],
+    "fixed_pairs": [],
+    "spread_tags": [],
+    "role_minimums": {}
+  },
+  "note": "발표 경험이 있는 학생과 개발 경험이 있는 학생을 각 팀에 최소 1명씩 포함해 주세요. 4학년은 한 팀에 몰리지 않게 해주세요.",
+  "starts": 3,
+  "seed": 0,
+  "excluded_rules": []
+}

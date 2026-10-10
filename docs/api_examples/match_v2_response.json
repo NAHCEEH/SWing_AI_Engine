@@ -1,0 +1,1166 @@
+{
+  "team_count": 11,
+  "objective_j": 159.95,
+  "avg_fit": 82.9,
+  "min_fit": 77.1,
+  "hard_violations": 0,
+  "swaps": 173,
+  "teams": [
+    {
+      "name": "1팀",
+      "fit_score": 86.2,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 100.0,
+        "time": 100.0,
+        "trait": 31.2
+      },
+      "common_hours": 7,
+      "common_slots": [
+        {
+          "day": 0,
+          "block": 4
+        },
+        {
+          "day": 0,
+          "block": 5
+        },
+        {
+          "day": 0,
+          "block": 6
+        },
+        {
+          "day": 0,
+          "block": 7
+        },
+        {
+          "day": 0,
+          "block": 8
+        },
+        {
+          "day": 3,
+          "block": 9
+        },
+        {
+          "day": 3,
+          "block": 11
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 7h",
+      "warnings": [
+        "주도형 학생 없음",
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "703b6bd8-d810-5e3f-98b0-bc60bb961533",
+          "name": "윤민서",
+          "major": "SW융합학과",
+          "year": 4,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "69d77961-8ea3-567f-b8d7-bd12f5b58031",
+          "name": "윤승민",
+          "major": "시각디자인학과",
+          "year": 2,
+          "assigned_role": "디자인",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "03c6abd6-0c7b-5601-a98b-6a777d452c19",
+          "name": "임준혁",
+          "major": "전기전자공학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "1905e2cc-bdef-5e6e-ad99-7211ad340529",
+          "name": "장준서",
+          "major": "수리데이터사이언스학과",
+          "year": 2,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "2팀",
+      "fit_score": 83.8,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 100.0,
+        "time": 100.0,
+        "trait": 18.8
+      },
+      "common_hours": 7,
+      "common_slots": [
+        {
+          "day": 0,
+          "block": 1
+        },
+        {
+          "day": 0,
+          "block": 2
+        },
+        {
+          "day": 3,
+          "block": 0
+        },
+        {
+          "day": 3,
+          "block": 1
+        },
+        {
+          "day": 3,
+          "block": 4
+        },
+        {
+          "day": 3,
+          "block": 6
+        },
+        {
+          "day": 3,
+          "block": 8
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 7h",
+      "warnings": [
+        "주도형 학생 없음",
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "2056194b-6aa7-56f1-aa3f-cb34258638f3",
+          "name": "권태윤",
+          "major": "경영학과",
+          "year": 2,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "4a834f6a-df97-5ff1-8207-55752ec85cfe",
+          "name": "송수민",
+          "major": "컴퓨터공학과",
+          "year": 2,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "3c04ab5b-7d9c-5212-b6d6-411ff75a1ebf",
+          "name": "조정우",
+          "major": "전기전자공학과",
+          "year": 2,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "9a4f8042-4dc1-549d-9adf-870ddcdcf9f0",
+          "name": "최주원",
+          "major": "수리데이터사이언스학과",
+          "year": 4,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "3팀",
+      "fit_score": 77.1,
+      "is_lowest": true,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 50.0,
+        "trait": 68.8
+      },
+      "common_hours": 3,
+      "common_slots": [
+        {
+          "day": 1,
+          "block": 9
+        },
+        {
+          "day": 3,
+          "block": 9
+        },
+        {
+          "day": 3,
+          "block": 11
+        }
+      ],
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 3h",
+      "warnings": [],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "f106ceb3-802a-58fd-a779-38187e0e80ee",
+          "name": "강민서",
+          "major": "컴퓨터공학과",
+          "year": 3,
+          "assigned_role": "디자인",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "acb6855d-d3b6-5e72-bd48-66ebe54e369e",
+          "name": "서재원",
+          "major": "수리데이터사이언스학과",
+          "year": 4,
+          "assigned_role": "발표",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "869f888f-b075-581a-bd1f-b4102f4b3c37",
+          "name": "이가은",
+          "major": "SW융합학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "b97b0fa2-b9aa-53bf-a4e1-f4e28e3a7994",
+          "name": "임지호",
+          "major": "수리데이터사이언스학과",
+          "year": 4,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "4팀",
+      "fit_score": 77.5,
+      "is_lowest": false,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 83.3,
+        "trait": 37.5
+      },
+      "common_hours": 5,
+      "common_slots": [
+        {
+          "day": 0,
+          "block": 11
+        },
+        {
+          "day": 1,
+          "block": 10
+        },
+        {
+          "day": 1,
+          "block": 11
+        },
+        {
+          "day": 3,
+          "block": 9
+        },
+        {
+          "day": 3,
+          "block": 10
+        }
+      ],
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 5h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "80b00c40-5e1d-5ca4-9e4b-b4817f149304",
+          "name": "서혜원",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "cbc11e20-3877-55ea-8771-cfeb8101e9d2",
+          "name": "장지아",
+          "major": "AI소프트웨어학과",
+          "year": 4,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "9aab688a-97e3-54df-a729-99c01782c61c",
+          "name": "정준서",
+          "major": "컴퓨터공학과",
+          "year": 2,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "264eecce-69d9-58da-b801-40bed775f03d",
+          "name": "조예은",
+          "major": "수리데이터사이언스학과",
+          "year": 2,
+          "assigned_role": "발표",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "5팀",
+      "fit_score": 82.1,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 100.0,
+        "time": 66.7,
+        "trait": 43.8
+      },
+      "common_hours": 4,
+      "common_slots": [
+        {
+          "day": 0,
+          "block": 4
+        },
+        {
+          "day": 0,
+          "block": 5
+        },
+        {
+          "day": 0,
+          "block": 6
+        },
+        {
+          "day": 0,
+          "block": 7
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 4h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "06503b81-b3d4-59d9-a24f-9fae0d4c42a5",
+          "name": "박서연",
+          "major": "컴퓨터공학과",
+          "year": 4,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "7b8e29fd-fe72-5f8b-a203-b92ac8f99979",
+          "name": "윤재원",
+          "major": "시각디자인학과",
+          "year": 2,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "82517c17-93a0-5899-9cd7-7e4d0d294256",
+          "name": "임유진",
+          "major": "SW융합학과",
+          "year": 4,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "cdb77a6f-fd80-51b1-a195-9d52f95428af",
+          "name": "한현우",
+          "major": "수리데이터사이언스학과",
+          "year": 2,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "6팀",
+      "fit_score": 91.7,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 90.0,
+        "time": 100.0,
+        "trait": 75.0
+      },
+      "common_hours": 9,
+      "common_slots": [
+        {
+          "day": 0,
+          "block": 4
+        },
+        {
+          "day": 0,
+          "block": 5
+        },
+        {
+          "day": 0,
+          "block": 6
+        },
+        {
+          "day": 0,
+          "block": 7
+        },
+        {
+          "day": 0,
+          "block": 8
+        },
+        {
+          "day": 3,
+          "block": 0
+        },
+        {
+          "day": 3,
+          "block": 2
+        },
+        {
+          "day": 3,
+          "block": 9
+        },
+        {
+          "day": 3,
+          "block": 11
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 9h",
+      "warnings": [],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "c2d772f6-842a-5b22-a820-865bf53ebedf",
+          "name": "강하은",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "d2f9fbe1-3477-58c0-80d7-da399b60ebe9",
+          "name": "신예린",
+          "major": "경영학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "ebbb30bb-f486-5ec7-aaec-8f1bff2c42aa",
+          "name": "신우진",
+          "major": "SW융합학과",
+          "year": 3,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 2
+        },
+        {
+          "student_id": "adbc1fcd-3481-5f39-b9b3-fad49a3bd736",
+          "name": "이하은",
+          "major": "전기전자공학과",
+          "year": 2,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "7팀",
+      "fit_score": 82.0,
+      "is_lowest": false,
+      "subscores": {
+        "major": 80.0,
+        "role": 92.0,
+        "time": 100.0,
+        "trait": 50.0
+      },
+      "common_hours": 6,
+      "common_slots": [
+        {
+          "day": 2,
+          "block": 10
+        },
+        {
+          "day": 2,
+          "block": 11
+        },
+        {
+          "day": 4,
+          "block": 5
+        },
+        {
+          "day": 4,
+          "block": 6
+        },
+        {
+          "day": 4,
+          "block": 7
+        },
+        {
+          "day": 4,
+          "block": 8
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 5/5명 · 공통 시간 주 6h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "92a82cf6-149c-5787-bceb-04a3ddf70ac2",
+          "name": "송규민",
+          "major": "수리데이터사이언스학과",
+          "year": 4,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 2
+        },
+        {
+          "student_id": "ada18837-f229-554d-812b-77dbbf4e338a",
+          "name": "신세아",
+          "major": "SW융합학과",
+          "year": 2,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "bd279c0b-e942-5316-a634-7e3f1a031734",
+          "name": "안성민",
+          "major": "시각디자인학과",
+          "year": 3,
+          "assigned_role": "디자인",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "05097dbf-7628-5eb6-bead-9b6d9f71d5b8",
+          "name": "임도윤",
+          "major": "경영학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "243e420a-9a3c-5cc9-83ef-c056fd66a93b",
+          "name": "장수빈",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "8팀",
+      "fit_score": 84.6,
+      "is_lowest": false,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 100.0,
+        "trait": 56.2
+      },
+      "common_hours": 10,
+      "common_slots": [
+        {
+          "day": 2,
+          "block": 1
+        },
+        {
+          "day": 2,
+          "block": 2
+        },
+        {
+          "day": 2,
+          "block": 6
+        },
+        {
+          "day": 4,
+          "block": 4
+        },
+        {
+          "day": 4,
+          "block": 5
+        },
+        {
+          "day": 4,
+          "block": 6
+        },
+        {
+          "day": 4,
+          "block": 7
+        },
+        {
+          "day": 4,
+          "block": 8
+        },
+        {
+          "day": 4,
+          "block": 9
+        },
+        {
+          "day": 4,
+          "block": 10
+        }
+      ],
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 10h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "8b7e3567-4478-5d6d-9707-0a8c9622f7b7",
+          "name": "강아린",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "d47b5ca3-ef7d-58ae-bf81-e85ff843622e",
+          "name": "김규민",
+          "major": "시각디자인학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "bc57cad4-3d3d-516c-bf62-1962885abc89",
+          "name": "오태윤",
+          "major": "전기전자공학과",
+          "year": 4,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "f230b848-ac55-5451-9d1d-6ee97feae9ac",
+          "name": "최유진",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "디자인",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "9팀",
+      "fit_score": 80.4,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 80.0,
+        "time": 66.7,
+        "trait": 68.8
+      },
+      "common_hours": 4,
+      "common_slots": [
+        {
+          "day": 1,
+          "block": 10
+        },
+        {
+          "day": 1,
+          "block": 11
+        },
+        {
+          "day": 2,
+          "block": 9
+        },
+        {
+          "day": 2,
+          "block": 11
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 4h",
+      "warnings": [],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "b6a34809-2702-5588-8f97-692db13a498e",
+          "name": "강하준",
+          "major": "컴퓨터공학과",
+          "year": 3,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 2
+        },
+        {
+          "student_id": "dd2cb4df-c5c9-51c6-b6e7-abe3fe27d087",
+          "name": "안수빈",
+          "major": "AI소프트웨어학과",
+          "year": 4,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "a67770d6-167d-50b8-9c3a-b79bd6c08c7c",
+          "name": "조로운",
+          "major": "경영학과",
+          "year": 2,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "8975e4fd-2bb6-5376-9145-d3968fa87911",
+          "name": "홍서진",
+          "major": "수리데이터사이언스학과",
+          "year": 4,
+          "assigned_role": "디자인",
+          "preference_rank": 2
+        }
+      ]
+    },
+    {
+      "name": "10팀",
+      "fit_score": 77.1,
+      "is_lowest": false,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 50.0,
+        "trait": 68.8
+      },
+      "common_hours": 3,
+      "common_slots": [
+        {
+          "day": 1,
+          "block": 0
+        },
+        {
+          "day": 1,
+          "block": 1
+        },
+        {
+          "day": 4,
+          "block": 11
+        }
+      ],
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 3h",
+      "warnings": [],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "2b331a05-bce6-549b-bece-2ea4f90b45a7",
+          "name": "서동현",
+          "major": "SW융합학과",
+          "year": 4,
+          "assigned_role": "발표",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "6a843e25-8fe6-5966-bb3b-2dc8f3e831bd",
+          "name": "장지호",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "프론트엔드",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "573ededf-d274-57ab-b51f-9907971a1683",
+          "name": "홍지민",
+          "major": "수리데이터사이언스학과",
+          "year": 3,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "0f31c762-cfd4-5f12-8dd0-9e2a7acf5569",
+          "name": "황민재",
+          "major": "컴퓨터공학과",
+          "year": 4,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        }
+      ]
+    },
+    {
+      "name": "11팀",
+      "fit_score": 89.2,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 90.0,
+        "time": 100.0,
+        "trait": 62.5
+      },
+      "common_hours": 6,
+      "common_slots": [
+        {
+          "day": 1,
+          "block": 4
+        },
+        {
+          "day": 1,
+          "block": 5
+        },
+        {
+          "day": 1,
+          "block": 6
+        },
+        {
+          "day": 1,
+          "block": 8
+        },
+        {
+          "day": 4,
+          "block": 0
+        },
+        {
+          "day": 4,
+          "block": 1
+        }
+      ],
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 6h",
+      "warnings": [],
+      "violations": [],
+      "members": [
+        {
+          "student_id": "5e61b296-4b62-57bf-a0ec-2f6c04c25cdc",
+          "name": "오준서",
+          "major": "SW융합학과",
+          "year": 3,
+          "assigned_role": "기획",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "7242e1db-d810-505a-83a5-7024b4c63986",
+          "name": "이준서",
+          "major": "수리데이터사이언스학과",
+          "year": 2,
+          "assigned_role": "발표",
+          "preference_rank": 2
+        },
+        {
+          "student_id": "0713de23-a230-541a-9ef8-491380cbb12c",
+          "name": "임보민",
+          "major": "컴퓨터공학과",
+          "year": 2,
+          "assigned_role": "데이터",
+          "preference_rank": 1
+        },
+        {
+          "student_id": "cb5ac60b-cbe4-5ac3-8c6d-53e87d3af616",
+          "name": "임정우",
+          "major": "AI소프트웨어학과",
+          "year": 3,
+          "assigned_role": "백엔드",
+          "preference_rank": 1
+        }
+      ]
+    }
+  ],
+  "trace": {
+    "stage": [
+      "초기 배치",
+      "국소 탐색",
+      "담금질 20%",
+      "담금질 40%",
+      "담금질 60%",
+      "담금질 80%",
+      "담금질 100%",
+      "최종"
+    ],
+    "avg": [
+      75.08,
+      81.94,
+      81.94,
+      81.94,
+      80.94,
+      82.76,
+      82.87,
+      82.87
+    ],
+    "low": [
+      64.58,
+      75.42,
+      75.42,
+      75.42,
+      77.08,
+      77.08,
+      77.08,
+      77.08
+    ]
+  },
+  "parsed_rules": [
+    {
+      "rule_id": "role_min:발표",
+      "source": "note",
+      "kind": "role_min",
+      "description": "각 팀 '발표' 1명 이상",
+      "applied": true
+    },
+    {
+      "rule_id": "role_min:개발",
+      "source": "note",
+      "kind": "role_min",
+      "description": "각 팀 '개발' 1명 이상",
+      "applied": true
+    },
+    {
+      "rule_id": "spread:4학년",
+      "source": "note",
+      "kind": "spread",
+      "description": "'4학년' 팀마다 고르게",
+      "applied": true
+    }
+  ],
+  "seed": 0,
+  "elapsed_ms": 1259,
+  "conditions": [
+    {
+      "rule_id": "same_major_max",
+      "label": "같은 학과 팀당 최대 2명",
+      "kind": "same_major_max",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "role_min:발표",
+      "label": "각 팀 '발표' 1명 이상",
+      "kind": "role_min",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "role_min:개발",
+      "label": "각 팀 '개발' 1명 이상",
+      "kind": "role_min",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "spread:4학년",
+      "label": "'4학년' 팀마다 고르게",
+      "kind": "spread",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "separate:0",
+      "label": "분리: 임지호 · 오준서",
+      "kind": "separate",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    }
+  ],
+  "alternatives": [
+    {
+      "objective_j": 159.16,
+      "avg_fit": 81.7,
+      "min_fit": 77.5,
+      "hard_violations": 0,
+      "teams": [
+        {
+          "name": "1팀",
+          "member_ids": [
+            "f106ceb3-802a-58fd-a779-38187e0e80ee",
+            "703b6bd8-d810-5e3f-98b0-bc60bb961533",
+            "b97b0fa2-b9aa-53bf-a4e1-f4e28e3a7994",
+            "264eecce-69d9-58da-b801-40bed775f03d"
+          ]
+        },
+        {
+          "name": "2팀",
+          "member_ids": [
+            "c2d772f6-842a-5b22-a820-865bf53ebedf",
+            "4a834f6a-df97-5ff1-8207-55752ec85cfe",
+            "3c04ab5b-7d9c-5212-b6d6-411ff75a1ebf",
+            "9a4f8042-4dc1-549d-9adf-870ddcdcf9f0"
+          ]
+        },
+        {
+          "name": "3팀",
+          "member_ids": [
+            "acb6855d-d3b6-5e72-bd48-66ebe54e369e",
+            "7b8e29fd-fe72-5f8b-a203-b92ac8f99979",
+            "cb5ac60b-cbe4-5ac3-8c6d-53e87d3af616",
+            "cdb77a6f-fd80-51b1-a195-9d52f95428af"
+          ]
+        },
+        {
+          "name": "4팀",
+          "member_ids": [
+            "d47b5ca3-ef7d-58ae-bf81-e85ff843622e",
+            "2b331a05-bce6-549b-bece-2ea4f90b45a7",
+            "92a82cf6-149c-5787-bceb-04a3ddf70ac2",
+            "9aab688a-97e3-54df-a729-99c01782c61c",
+            "573ededf-d274-57ab-b51f-9907971a1683"
+          ]
+        },
+        {
+          "name": "5팀",
+          "member_ids": [
+            "06503b81-b3d4-59d9-a24f-9fae0d4c42a5",
+            "5e61b296-4b62-57bf-a0ec-2f6c04c25cdc",
+            "7242e1db-d810-505a-83a5-7024b4c63986",
+            "f230b848-ac55-5451-9d1d-6ee97feae9ac"
+          ]
+        },
+        {
+          "name": "6팀",
+          "member_ids": [
+            "b6a34809-2702-5588-8f97-692db13a498e",
+            "80b00c40-5e1d-5ca4-9e4b-b4817f149304",
+            "cbc11e20-3877-55ea-8771-cfeb8101e9d2",
+            "a67770d6-167d-50b8-9c3a-b79bd6c08c7c"
+          ]
+        },
+        {
+          "name": "7팀",
+          "member_ids": [
+            "8b7e3567-4478-5d6d-9707-0a8c9622f7b7",
+            "d2f9fbe1-3477-58c0-80d7-da399b60ebe9",
+            "adbc1fcd-3481-5f39-b9b3-fad49a3bd736",
+            "82517c17-93a0-5899-9cd7-7e4d0d294256"
+          ]
+        },
+        {
+          "name": "8팀",
+          "member_ids": [
+            "bd279c0b-e942-5316-a634-7e3f1a031734",
+            "dd2cb4df-c5c9-51c6-b6e7-abe3fe27d087",
+            "05097dbf-7628-5eb6-bead-9b6d9f71d5b8",
+            "6a843e25-8fe6-5966-bb3b-2dc8f3e831bd"
+          ]
+        },
+        {
+          "name": "9팀",
+          "member_ids": [
+            "ebbb30bb-f486-5ec7-aaec-8f1bff2c42aa",
+            "bc57cad4-3d3d-516c-bf62-1962885abc89",
+            "243e420a-9a3c-5cc9-83ef-c056fd66a93b",
+            "0f31c762-cfd4-5f12-8dd0-9e2a7acf5569"
+          ]
+        },
+        {
+          "name": "10팀",
+          "member_ids": [
+            "69d77961-8ea3-567f-b8d7-bd12f5b58031",
+            "869f888f-b075-581a-bd1f-b4102f4b3c37",
+            "03c6abd6-0c7b-5601-a98b-6a777d452c19",
+            "1905e2cc-bdef-5e6e-ad99-7211ad340529"
+          ]
+        },
+        {
+          "name": "11팀",
+          "member_ids": [
+            "2056194b-6aa7-56f1-aa3f-cb34258638f3",
+            "ada18837-f229-554d-812b-77dbbf4e338a",
+            "0713de23-a230-541a-9ef8-491380cbb12c",
+            "8975e4fd-2bb6-5376-9145-d3968fa87911"
+          ]
+        }
+      ]
+    },
+    {
+      "objective_j": 159.12,
+      "avg_fit": 81.2,
+      "min_fit": 77.9,
+      "hard_violations": 0,
+      "teams": [
+        {
+          "name": "1팀",
+          "member_ids": [
+            "ebbb30bb-f486-5ec7-aaec-8f1bff2c42aa",
+            "703b6bd8-d810-5e3f-98b0-bc60bb961533",
+            "7242e1db-d810-505a-83a5-7024b4c63986",
+            "0f31c762-cfd4-5f12-8dd0-9e2a7acf5569"
+          ]
+        },
+        {
+          "name": "2팀",
+          "member_ids": [
+            "b6a34809-2702-5588-8f97-692db13a498e",
+            "a67770d6-167d-50b8-9c3a-b79bd6c08c7c",
+            "264eecce-69d9-58da-b801-40bed775f03d",
+            "9a4f8042-4dc1-549d-9adf-870ddcdcf9f0"
+          ]
+        },
+        {
+          "name": "3팀",
+          "member_ids": [
+            "acb6855d-d3b6-5e72-bd48-66ebe54e369e",
+            "5e61b296-4b62-57bf-a0ec-2f6c04c25cdc",
+            "cb5ac60b-cbe4-5ac3-8c6d-53e87d3af616",
+            "8975e4fd-2bb6-5376-9145-d3968fa87911"
+          ]
+        },
+        {
+          "name": "4팀",
+          "member_ids": [
+            "92a82cf6-149c-5787-bceb-04a3ddf70ac2",
+            "adbc1fcd-3481-5f39-b9b3-fad49a3bd736",
+            "9aab688a-97e3-54df-a729-99c01782c61c",
+            "f230b848-ac55-5451-9d1d-6ee97feae9ac"
+          ]
+        },
+        {
+          "name": "5팀",
+          "member_ids": [
+            "06503b81-b3d4-59d9-a24f-9fae0d4c42a5",
+            "4a834f6a-df97-5ff1-8207-55752ec85cfe",
+            "bd279c0b-e942-5316-a634-7e3f1a031734",
+            "cdb77a6f-fd80-51b1-a195-9d52f95428af"
+          ]
+        },
+        {
+          "name": "6팀",
+          "member_ids": [
+            "80b00c40-5e1d-5ca4-9e4b-b4817f149304",
+            "dd2cb4df-c5c9-51c6-b6e7-abe3fe27d087",
+            "0713de23-a230-541a-9ef8-491380cbb12c",
+            "82517c17-93a0-5899-9cd7-7e4d0d294256"
+          ]
+        },
+        {
+          "name": "7팀",
+          "member_ids": [
+            "f106ceb3-802a-58fd-a779-38187e0e80ee",
+            "869f888f-b075-581a-bd1f-b4102f4b3c37",
+            "b97b0fa2-b9aa-53bf-a4e1-f4e28e3a7994",
+            "cbc11e20-3877-55ea-8771-cfeb8101e9d2"
+          ]
+        },
+        {
+          "name": "8팀",
+          "member_ids": [
+            "8b7e3567-4478-5d6d-9707-0a8c9622f7b7",
+            "d47b5ca3-ef7d-58ae-bf81-e85ff843622e",
+            "bc57cad4-3d3d-516c-bf62-1962885abc89",
+            "05097dbf-7628-5eb6-bead-9b6d9f71d5b8",
+            "243e420a-9a3c-5cc9-83ef-c056fd66a93b"
+          ]
+        },
+        {
+          "name": "9팀",
+          "member_ids": [
+            "2b331a05-bce6-549b-bece-2ea4f90b45a7",
+            "6a843e25-8fe6-5966-bb3b-2dc8f3e831bd",
+            "3c04ab5b-7d9c-5212-b6d6-411ff75a1ebf",
+            "573ededf-d274-57ab-b51f-9907971a1683"
+          ]
+        },
+        {
+          "name": "10팀",
+          "member_ids": [
+            "c2d772f6-842a-5b22-a820-865bf53ebedf",
+            "2056194b-6aa7-56f1-aa3f-cb34258638f3",
+            "ada18837-f229-554d-812b-77dbbf4e338a",
+            "69d77961-8ea3-567f-b8d7-bd12f5b58031"
+          ]
+        },
+        {
+          "name": "11팀",
+          "member_ids": [
+            "d2f9fbe1-3477-58c0-80d7-da399b60ebe9",
+            "7b8e29fd-fe72-5f8b-a203-b92ac8f99979",
+            "03c6abd6-0c7b-5601-a98b-6a777d452c19",
+            "1905e2cc-bdef-5e6e-ad99-7211ad340529"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "feasible": true,
+  "team_count": 11,
+  "composition": "5명×1 + 4명×10",
+  "items": [
+    {
+      "name": "후보 수",
+      "ok": true,
+      "detail": "후보 45명 / 팀 크기 4명 → 5명×1 + 4명×10",
+      "suggestion": null,
+      "fix": null
+    },
+    {
+      "name": "같은 학과 팀당 최대 2명",
+      "ok": true,
+      "detail": "가장 많은 학과 16명 / 허용 2명×11팀 = 22명",
+      "suggestion": null,
+      "fix": null
+    },
+    {
+      "name": "각 팀 '발표' 1명 이상",
+      "ok": true,
+      "detail": "보유 16명 / 필요 11명",
+      "suggestion": null,
+      "fix": null
+    },
+    {
+      "name": "각 팀 '개발' 1명 이상",
+      "ok": true,
+      "detail": "보유 40명 / 필요 11명",
+      "suggestion": null,
+      "fix": null
+    },
+    {
+      "name": "'4학년' 팀마다 고르게",
+      "ok": true,
+      "detail": "보유 13명 → 팀당 최대 2명",
+      "suggestion": null,
+      "fix": null
+    }
+  ],
+  "parsed_rules": [
+    {
+      "rule_id": "role_min:발표",
+      "source": "note",
+      "kind": "role_min",
+      "description": "각 팀 '발표' 1명 이상",
+      "applied": true
+    },
+    {
+      "rule_id": "role_min:개발",
+      "source": "note",
+      "kind": "role_min",
+      "description": "각 팀 '개발' 1명 이상",
+      "applied": true
+    },
+    {
+      "rule_id": "spread:4학년",
+      "source": "note",
+      "kind": "spread",
+      "description": "'4학년' 팀마다 고르게",
+      "applied": true
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "team_count": 11,
+  "objective_j": -853.53,
+  "avg_fit": 81.5,
+  "min_fit": 65.0,
+  "hard_violations": 1,
+  "elapsed_ms": 1,
+  "conditions": [
+    {
+      "rule_id": "same_major_max",
+      "label": "같은 학과 팀당 최대 2명",
+      "kind": "same_major_max",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "role_min:발표",
+      "label": "각 팀 '발표' 1명 이상",
+      "kind": "role_min",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "role_min:개발",
+      "label": "각 팀 '개발' 1명 이상",
+      "kind": "role_min",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    },
+    {
+      "rule_id": "spread:4학년",
+      "label": "'4학년' 팀마다 고르게",
+      "kind": "spread",
+      "satisfied": false,
+      "violations": 1,
+      "teams": [
+        "3팀"
+      ]
+    },
+    {
+      "rule_id": "separate:0",
+      "label": "분리: 임지호 · 오준서",
+      "kind": "separate",
+      "satisfied": true,
+      "violations": 0,
+      "teams": []
+    }
+  ],
+  "teams": [
+    {
+      "name": "1팀",
+      "fit_score": 65.0,
+      "is_lowest": true,
+      "subscores": {
+        "major": 100.0,
+        "role": 80.0,
+        "time": 33.3,
+        "trait": 25.0
+      },
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 2h",
+      "warnings": [
+        "공통 시간 주 2h — 회의 시간 잡기 어려움",
+        "주도형 학생 없음",
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": []
+    },
+    {
+      "name": "2팀",
+      "fit_score": 83.8,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 100.0,
+        "time": 100.0,
+        "trait": 18.8
+      },
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 7h",
+      "warnings": [
+        "주도형 학생 없음",
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": []
+    },
+    {
+      "name": "3팀",
+      "fit_score": 82.9,
+      "is_lowest": false,
+      "subscores": {
+        "major": 50.0,
+        "role": 100.0,
+        "time": 100.0,
+        "trait": 81.2
+      },
+      "summary": "전공 2개 · 희망 역할 4/4명 · 공통 시간 주 9h",
+      "warnings": [],
+      "violations": [
+        "spread:4학년"
+      ]
+    },
+    {
+      "name": "4팀",
+      "fit_score": 77.5,
+      "is_lowest": false,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 83.3,
+        "trait": 37.5
+      },
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 5h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": []
+    },
+    {
+      "name": "5팀",
+      "fit_score": 82.1,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 100.0,
+        "time": 66.7,
+        "trait": 43.8
+      },
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 4h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": []
+    },
+    {
+      "name": "6팀",
+      "fit_score": 91.7,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 90.0,
+        "time": 100.0,
+        "trait": 75.0
+      },
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 9h",
+      "warnings": [],
+      "violations": []
+    },
+    {
+      "name": "7팀",
+      "fit_score": 82.0,
+      "is_lowest": false,
+      "subscores": {
+        "major": 80.0,
+        "role": 92.0,
+        "time": 100.0,
+        "trait": 50.0
+      },
+      "summary": "전공 4개 · 희망 역할 5/5명 · 공통 시간 주 6h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": []
+    },
+    {
+      "name": "8팀",
+      "fit_score": 84.6,
+      "is_lowest": false,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 100.0,
+        "trait": 56.2
+      },
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 10h",
+      "warnings": [
+        "진행 속도 성향 차이 큼"
+      ],
+      "violations": []
+    },
+    {
+      "name": "9팀",
+      "fit_score": 80.4,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 80.0,
+        "time": 66.7,
+        "trait": 68.8
+      },
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 4h",
+      "warnings": [],
+      "violations": []
+    },
+    {
+      "name": "10팀",
+      "fit_score": 77.1,
+      "is_lowest": false,
+      "subscores": {
+        "major": 75.0,
+        "role": 100.0,
+        "time": 50.0,
+        "trait": 68.8
+      },
+      "summary": "전공 3개 · 희망 역할 4/4명 · 공통 시간 주 3h",
+      "warnings": [],
+      "violations": []
+    },
+    {
+      "name": "11팀",
+      "fit_score": 89.2,
+      "is_lowest": false,
+      "subscores": {
+        "major": 100.0,
+        "role": 90.0,
+        "time": 100.0,
+        "trait": 62.5
+      },
+      "summary": "전공 4개 · 희망 역할 4/4명 · 공통 시간 주 6h",
+      "warnings": [],
+      "violations": []
+    }
+  ]
+}

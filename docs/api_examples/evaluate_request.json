@@ -1,0 +1,124 @@
+{
+  "weights": {
+    "major": 4,
+    "role": 5,
+    "time": 3,
+    "trait": 3
+  },
+  "hard": {
+    "same_major_max": 2,
+    "separate_pairs": [
+      [
+        "b97b0fa2-b9aa-53bf-a4e1-f4e28e3a7994",
+        "5e61b296-4b62-57bf-a0ec-2f6c04c25cdc"
+      ]
+    ],
+    "fixed_pairs": [],
+    "spread_tags": [],
+    "role_minimums": {}
+  },
+  "note": "발표 경험이 있는 학생과 개발 경험이 있는 학생을 각 팀에 최소 1명씩 포함해 주세요. 4학년은 한 팀에 몰리지 않게 해주세요.",
+  "excluded_rules": [],
+  "teams": [
+    {
+      "name": "1팀",
+      "member_ids": [
+        "f106ceb3-802a-58fd-a779-38187e0e80ee",
+        "69d77961-8ea3-567f-b8d7-bd12f5b58031",
+        "03c6abd6-0c7b-5601-a98b-6a777d452c19",
+        "1905e2cc-bdef-5e6e-ad99-7211ad340529"
+      ]
+    },
+    {
+      "name": "2팀",
+      "member_ids": [
+        "2056194b-6aa7-56f1-aa3f-cb34258638f3",
+        "4a834f6a-df97-5ff1-8207-55752ec85cfe",
+        "3c04ab5b-7d9c-5212-b6d6-411ff75a1ebf",
+        "9a4f8042-4dc1-549d-9adf-870ddcdcf9f0"
+      ]
+    },
+    {
+      "name": "3팀",
+      "member_ids": [
+        "703b6bd8-d810-5e3f-98b0-bc60bb961533",
+        "acb6855d-d3b6-5e72-bd48-66ebe54e369e",
+        "869f888f-b075-581a-bd1f-b4102f4b3c37",
+        "b97b0fa2-b9aa-53bf-a4e1-f4e28e3a7994"
+      ]
+    },
+    {
+      "name": "4팀",
+      "member_ids": [
+        "80b00c40-5e1d-5ca4-9e4b-b4817f149304",
+        "cbc11e20-3877-55ea-8771-cfeb8101e9d2",
+        "9aab688a-97e3-54df-a729-99c01782c61c",
+        "264eecce-69d9-58da-b801-40bed775f03d"
+      ]
+    },
+    {
+      "name": "5팀",
+      "member_ids": [
+        "06503b81-b3d4-59d9-a24f-9fae0d4c42a5",
+        "7b8e29fd-fe72-5f8b-a203-b92ac8f99979",
+        "82517c17-93a0-5899-9cd7-7e4d0d294256",
+        "cdb77a6f-fd80-51b1-a195-9d52f95428af"
+      ]
+    },
+    {
+      "name": "6팀",
+      "member_ids": [
+        "c2d772f6-842a-5b22-a820-865bf53ebedf",
+        "d2f9fbe1-3477-58c0-80d7-da399b60ebe9",
+        "ebbb30bb-f486-5ec7-aaec-8f1bff2c42aa",
+        "adbc1fcd-3481-5f39-b9b3-fad49a3bd736"
+      ]
+    },
+    {
+      "name": "7팀",
+      "member_ids": [
+        "92a82cf6-149c-5787-bceb-04a3ddf70ac2",
+        "ada18837-f229-554d-812b-77dbbf4e338a",
+        "bd279c0b-e942-5316-a634-7e3f1a031734",
+        "05097dbf-7628-5eb6-bead-9b6d9f71d5b8",
+        "243e420a-9a3c-5cc9-83ef-c056fd66a93b"
+      ]
+    },
+    {
+      "name": "8팀",
+      "member_ids": [
+        "8b7e3567-4478-5d6d-9707-0a8c9622f7b7",
+        "d47b5ca3-ef7d-58ae-bf81-e85ff843622e",
+        "bc57cad4-3d3d-516c-bf62-1962885abc89",
+        "f230b848-ac55-5451-9d1d-6ee97feae9ac"
+      ]
+    },
+    {
+      "name": "9팀",
+      "member_ids": [
+        "b6a34809-2702-5588-8f97-692db13a498e",
+        "dd2cb4df-c5c9-51c6-b6e7-abe3fe27d087",
+        "a67770d6-167d-50b8-9c3a-b79bd6c08c7c",
+        "8975e4fd-2bb6-5376-9145-d3968fa87911"
+      ]
+    },
+    {
+      "name": "10팀",
+      "member_ids": [
+        "2b331a05-bce6-549b-bece-2ea4f90b45a7",
+        "6a843e25-8fe6-5966-bb3b-2dc8f3e831bd",
+        "573ededf-d274-57ab-b51f-9907971a1683",
+        "0f31c762-cfd4-5f12-8dd0-9e2a7acf5569"
+      ]
+    },
+    {
+      "name": "11팀",
+      "member_ids": [
+        "5e61b296-4b62-57bf-a0ec-2f6c04c25cdc",
+        "7242e1db-d810-505a-83a5-7024b4c63986",
+        "0713de23-a230-541a-9ef8-491380cbb12c",
+        "cb5ac60b-cbe4-5ac3-8c6d-53e87d3af616"
+      ]
+    }
+  ]
+}

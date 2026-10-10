@@ -1,0 +1,19 @@
+{
+  "detail": {
+    "code": "INFEASIBLE",
+    "message": "하드 조건을 모두 지킬 수 없습니다.",
+    "items": [
+      {
+        "name": "각 팀 '발표' 1명 이상",
+        "ok": false,
+        "detail": "보유 10명 / 필요 11명",
+        "suggestion": "'발표' 최소 인원을 0명으로 낮추세요.",
+        "fix": {
+          "op": "set",
+          "path": "hard.role_minimums.발표",
+          "value": 0
+        }
+      }
+    ]
+  }
+}
