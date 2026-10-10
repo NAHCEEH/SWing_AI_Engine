@@ -1,6 +1,3 @@
-# SWing_AI_Engine
-Sw Capstone Design_AI Engine_Modeling
-
 # SWing AI Engine
 
 팀 SWing의 **TeamFit 팀 편성 엔진과 FastAPI 백엔드**를 담은 저장소입니다. DS 창업캡스톤디자인 프로젝트로, 학생 설문과 교수의 편성 조건을 반영해 수업별 팀을 구성합니다.
