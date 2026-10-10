@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# 환경 변수 (DB 주소, JWT 비밀키)
+.env
+
+# OS / 편집기
+.DS_Store
+.vscode/
+.idea/
