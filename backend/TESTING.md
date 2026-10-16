@@ -13,6 +13,8 @@
 
 uvicorn을 바로 실행하면 패키지가 없어서 실패합니다. 먼저 설치하세요.
 
+Windows (PowerShell):
+
 ```powershell
 cd <프로젝트 경로>\backend
 python -m venv .venv
@@ -20,6 +22,18 @@ python -m venv .venv
 pip install -r requirements.txt
 copy .env.example .env      # 그리고 DATABASE_URL 등 값 확인/수정
 ```
+
+macOS / Linux (터미널):
+
+```bash
+cd <프로젝트 경로>/backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env        # 그리고 DATABASE_URL 등 값 확인/수정
+```
+
+> 엔진 단위 테스트(6-3)와 시연(6-4)만 돌릴 때는 DB와 `.env`가 필요 없습니다.
 
 `.env`의 `DATABASE_URL`이 실제 PostgreSQL 접속 정보와 맞는지 꼭 확인하세요.
 (기본값: `postgresql+psycopg://teammatch:teammatch@localhost:5432/teammatch`)
@@ -157,7 +171,10 @@ uvicorn app.main:app --reload
 
 ---
 
-## 6. v2 엔진 테스트 (TeamFit) — 팀원 메모에 없던 신규
+## 6. AI 엔진 테스트 (TeamFit) — 2026-10-10 v1.1로 갱신
+
+`app/engine` 내부가 AI 엔진 v1.1로 바뀌었습니다. 엔드포인트와 요청·응답 형식은
+그대로이고, 엔진 구성은 [app/engine/README.md](app/engine/README.md)에 있습니다.
 
 ### 6-1. 실행 전 점검 — `POST /api/classes/{class_id}/precheck`
 ```json
@@ -169,17 +186,44 @@ uvicorn app.main:app --reload
 }
 ```
 - 조건 충족 가능 여부(feasible)와 항목별 점검 결과를 돌려줍니다.
+- v1.1부터 태그 `개발`(프론트엔드·백엔드·데이터 희망자)과 `N학년`(예: `4학년`)을
+  인식합니다. 어휘에 없는 태그는 조용히 무시하지 않고 실패 항목으로 알려 줍니다.
+- 팀 수 = ⌊학생 수 ÷ team_size⌋, 남는 학생은 앞 팀부터 1명씩 더합니다
+  (46명·4명 → `5명×2 + 4명×9`).
 
 ### 6-2. v2 매칭 실행 — `POST /api/classes/{class_id}/match-v2`
 - 같은 body 사용. 응답에 목적함수 J, 평균/최저 조화도, 하드위반 수,
   교환 횟수, 팀별 결과(최저 팀 표시), 조화도 추이, 주관식 해석이 담깁니다.
 - 점검이 불가능(feasible=false)하면 422로 막고 완화 안내를 줍니다.
+- 45명 기준 약 1초 안에 끝납니다 (이전 v2 엔진은 약 17초).
 
-### 6-3. 엔진 단위 테스트 (DB 불필요, 가장 빠른 검증)
-```powershell
+### 6-3. 단위 테스트 (DB 불필요, 가장 빠른 검증)
+```bash
 cd backend
-pytest -q
+python -m pytest -q
 ```
+- 기대 결과: `34 passed` (약 1~5초).
+- `backend/pytest.ini`가 `backend/`를 import 경로에 넣어 주므로 `pytest -q`만 써도 됩니다.
+  (이 파일이 없을 때는 `pytest -q`가 `ModuleNotFoundError: No module named 'app'`으로
+  4개 파일 모두 실패했습니다.)
+
+| 파일 | 개수 | 검증 내용 |
+|---|---|---|
+| `tests/test_matching.py` | 5 | 기존 그리디 엔진(`app/matching.py`) |
+| `tests/test_match_guards.py` | 3 | 매칭 라우터의 중복 배정 방어 |
+| `tests/test_engine_v2.py` | 9 | 엔진 계약: 점수 범위, J 패널티, 전원 배정, 시드 재현, 사전 점검, 주관식 해석 |
+| `tests/test_engine_port.py` | 17 | AI 엔진 v1.1: 팀 수 규칙, 태그 별칭, 역할 배정, 빠른 채점기 = 기준 계산, 하드 조건 준수, 완화안(fix), evaluate, 학과·학년 미입력 |
+
+### 6-4. 엔진 시연 (DB 불필요)
+```bash
+cd backend
+python scripts/engine_demo.py            # 합성 수강생 45명, 교수 메모 포함
+python scripts/engine_demo.py --n 90     # 90명
+python scripts/engine_demo.py --no-note  # 교수 메모 없이
+```
+- 사전 점검 → 편성 → 검산(4학년 분산, 발표·개발 희망자, 같은 학과 수) → 팀별 요약·역할 →
+  조건 충족 표 → 대안 → evaluate(학생 1명 맞바꾼 뒤 재채점) 순서로 출력합니다.
+- 45명 기준 기대값: 약 1초, 평균 86.9 · 최저 83.8, 하드 위반 0.
 
 ---
 
@@ -248,10 +292,12 @@ pytest -q
 5. **테스트가 엔진에 치우침**
    - `tests/`는 매칭 엔진 로직만 검증합니다. 라우터(인증/권한/수업 흐름)
      레벨 테스트가 없어, API 리그레션을 못 잡습니다.
-   - 게다가 v2 테스트는 아직 `pytest`로 **실행 검증을 하지 않았습니다.**
+   - (2026-10-10 갱신) 엔진 테스트는 `python -m pytest -q`로 34개 모두 통과를
+     확인했습니다. 라우터 레벨 테스트가 없는 점은 그대로입니다.
 
 6. **운영 설정 미비**
-   - `.gitignore`, 배포 설정(Docker 등), 운영용 비밀키 관리가 없습니다.
+   - 배포 설정(Docker 등), 운영용 비밀키 관리가 없습니다.
+     (`.gitignore`는 저장소 루트에, `.env.example`은 `backend/`에 추가됨 — 2026-10-10)
    - `config.py`의 `jwt_secret` 기본값이 placeholder라 운영 전 교체 필수.
 
 7. **CORS 출처가 예시값**
