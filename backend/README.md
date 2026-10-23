@@ -209,7 +209,8 @@ python -m pytest -q
 | `tests/test_match_guards.py` | 3 | 매칭 라우터의 중복 배정 방어 |
 | `tests/test_engine_v2.py` | 9 | 점수 범위, 패널티, 전원 배정, 시드 재현성, 사전 점검, 주관식 해석 |
 | `tests/test_engine_port.py` | 17 | TeamFit v1.1의 팀 수 규칙, 태그, 역할 배정, 채점, 제약 조건, 완화안, 평가 |
-| **합계** | **34** | |
+| `tests/test_llm_rules.py` | 16 | 교수 메모 LLM 해석기: 응답 검증, 지원 안 되는 요구 표시, 실패 시 규칙 기반 복귀, 캐시, 요청 형식 (실제 LLM 호출 없음) |
+| **합계** | **50** | |
 
 설치 및 API 흐름별 검증 방법은 [TESTING.md](TESTING.md)를 참고하세요. 위 테스트 목록은 인증·권한·수업 흐름 전체에 대한 API 통합 테스트를 포함하지 않습니다.
 

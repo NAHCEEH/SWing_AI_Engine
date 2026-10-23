@@ -202,7 +202,7 @@ uvicorn app.main:app --reload
 cd backend
 python -m pytest -q
 ```
-- 기대 결과: `34 passed` (약 1~5초).
+- 기대 결과: `50 passed` (약 1~6초).
 - `backend/pytest.ini`가 `backend/`를 import 경로에 넣어 주므로 `pytest -q`만 써도 됩니다.
   (이 파일이 없을 때는 `pytest -q`가 `ModuleNotFoundError: No module named 'app'`으로
   4개 파일 모두 실패했습니다.)
@@ -213,8 +213,18 @@ python -m pytest -q
 | `tests/test_match_guards.py` | 3 | 매칭 라우터의 중복 배정 방어 |
 | `tests/test_engine_v2.py` | 9 | 엔진 계약: 점수 범위, J 패널티, 전원 배정, 시드 재현, 사전 점검, 주관식 해석 |
 | `tests/test_engine_port.py` | 17 | AI 엔진 v1.1: 팀 수 규칙, 태그 별칭, 역할 배정, 빠른 채점기 = 기준 계산, 하드 조건 준수, 완화안(fix), evaluate, 학과·학년 미입력 |
+| `tests/test_llm_rules.py` | 16 | 교수 메모 LLM 해석기 (가짜 응답으로 검증, 실제 LLM 호출 없음) |
 
-### 6-4. 엔진 시연 (DB 불필요)
+### 6-4. 교수 메모 해석기 평가 (DB 불필요)
+```bash
+cd backend
+python scripts/eval_memo_parser.py              # 규칙 기반
+python scripts/eval_memo_parser.py --mode both  # 규칙 기반 vs LLM (.env에 LLM 설정 필요)
+```
+- 정답 세트 `tests/data/memo_gold.json`(교수 메모 20개)으로 완전 일치, 정밀도·재현율, 지원 안 되는 요구 알림을 출력합니다.
+- 규칙 기반 기준값: 완전 일치 7/20, 재현율 0.50, 알림 0/3.
+
+### 6-5. 엔진 시연 (DB 불필요)
 ```bash
 cd backend
 python scripts/engine_demo.py            # 합성 수강생 45명, 교수 메모 포함

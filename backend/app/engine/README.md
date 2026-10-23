@@ -12,7 +12,8 @@
 | `precheck.py` | 팀 수 규칙 `team_sizes`, 개수 기반 사전 점검 (`items[].fix` 포함) |
 | `optimizer.py` | 희소 태그 우선 초기 배치 → 2-교환 국소 탐색 → 담금질 → 마무리, `starts`번 반복 |
 | `explain.py` | 팀 카드 값(하위 점수·공통 시간·요약·경고·위반·역할 배정), 조건 충족 표, `evaluate` |
-| `nl_rules.py` | 교수 메모 해석 (기존 파일 유지) |
+| `nl_rules.py` | 교수 메모 해석 — 규칙 기반 (팀원 작성), LLM 설정이 있으면 `llm_rules`를 먼저 사용 |
+| `llm_rules.py` | 교수 메모 LLM 해석기: 프롬프트, 응답 검증, 캐시, anthropic/openai 호출 |
 
 ## 라우터와의 계약 (바뀌지 않음)
 
@@ -57,6 +58,16 @@ except EvaluateError as e:
 - 태그 별칭: `개발` = 프론트엔드·백엔드·데이터 희망, `N학년` = 학년. 모르는 태그는 precheck 실패로 알림.
 - 역할 점수: 희망 순위 반영 (1지망 1.0 · 2지망 0.6 · 3지망 이하 0.3), 서로 다른 역할 최대 배정.
 - 속도: 교환마다 바뀐 두 팀만 다시 채점, 팀 점수 캐시. 45명 약 1초, 90명 약 5초, 전체 상한 20초.
+
+## 교수 메모 해석 (LLM, 선택)
+
+`nl_rules.parse_requirements`는 LLM 설정이 있으면 `llm_rules.py`의 LLM 해석기를 먼저 쓰고, 없거나 실패하면 기존 규칙 기반으로 돌아갑니다. 라우터 코드는 바꿀 필요가 없습니다.
+
+- 설정: `backend/.env`에 `TEAMFIT_LLM_PROVIDER`(anthropic/openai), `TEAMFIT_LLM_MODEL`, API 키 (`.env.example` 참고)
+- LLM은 `role_min`·`spread`·`weight` 세 가지 조건과 정해진 태그로만 답하게 하고, 형식·태그·범위를 검사해 어긋난 항목은 버립니다.
+- 엔진이 못 하는 요구(특정 학생, 성적, 유학생 등)는 `applied=False`, "적용 안 됨: …"으로 돌려 화면에서 교수에게 보입니다.
+- 같은 메모는 한 번만 호출(캐시)해서 사전 점검과 매칭이 같은 해석을 씁니다. temperature 0.
+- 평가: `python scripts/eval_memo_parser.py --mode both` — 정답 세트 `tests/data/memo_gold.json`(메모 20개)으로 규칙 기반과 LLM을 비교. 규칙 기반 기준값: 완전 일치 7/20, 재현율 0.50, 지원 안 되는 요구 알림 0/3.
 
 ## 확인 필요
 
